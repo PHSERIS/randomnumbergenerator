@@ -1,0 +1,25 @@
+{
+	"name": "Random Number ActionTag",
+
+	"namespace": "MGB\\RandomNumberActionTagRepo",
+
+	"authors": [
+		{
+			"name": "David Clark",
+			"email": "dclark27@partners.org",
+			"institution": "Mass General Brigham"
+		}
+	],
+
+    "framework-version": 3,
+	
+	"permissions": [
+		"redcap_every_page_before_render",
+        "redcap_data_entry_form_top",
+		"redcap_survey_page_top"
+	],
+
+	"description": "External module that adds an action-tag to this project for generating random numbers on text fields."
+
+	
+}
