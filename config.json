@@ -1,25 +1,55 @@
 {
-	"name": "Random Number ActionTag",
+    "name": "MGB Random Number ActionTag",
 
-	"namespace": "MGB\\RandomNumberActionTagRepo",
+    "namespace": "MGB\\RandomNumberActionTag",
 
-	"authors": [
-		{
-			"name": "David Clark",
-			"email": "dclark27@partners.org",
-			"institution": "Mass General Brigham"
-		}
-	],
+    "description": "External module that adds an action-tag to this project for generating random numbers on text fields.",
 
-    "framework-version": 9,
-	
-	"permissions": [
-		"redcap_every_page_before_render",
-        "redcap_data_entry_form_top",
-		"redcap_survey_page_top"
-	],
+    "documentation": "README.md",
 
-	"description": "External module that adds an action-tag to this project for generating random numbers on text fields."
+    "authors": [
+        {
+            "name": "David Heskett",
+            "email": "dheskett@mgb.org",
+            "institution": "Mass General Brigham"
+        },
+        {
+            "name": "Mass General Brigham REDCap Team",
+            "email": "redcap@mgb.org",
+            "institution": "Mass General Brigham"
+        }
+    ],
 
-	
+    "framework-version": 15,
+
+    "enable-every-page-hooks-on-system-pages":false,
+
+    "crons": [
+    ],
+
+    "no-auth-pages": [
+    ],
+
+    "action-tags": [
+        {
+             "tag": "@MGB_RANDOMNUMBER",
+             "description": "Random number generates a random number between  2 values - defaults to 0 & 100.  Also can specify range MGB_RANDOMNUMBER(101,110)."
+        }
+    ],
+
+    "versions": [
+        {
+            "1.0.5": "Minor update: standardize branding, emails and doc updates.",
+            "1.0.4": "Bug fix: fixes min and max values to be robust. Also fixes problem with leading paren making value be zero for MIN.",
+            "1.0.3": "Updated PHP8 fixes and other minor update changes.",
+            "1.0.2": "Previous Development with documentation changes."
+        }
+    ],
+
+    "compatibility": {
+        "php-version-min": "8.0",
+        "php-version-max": "",
+        "redcap-version-min": "14.0.2",
+        "redcap-version-max": ""
+    }    
 }
