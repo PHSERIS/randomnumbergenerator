@@ -33,12 +33,21 @@
     "action-tags": [
         {
              "tag": "@MGB_RANDOMNUMBER",
-             "description": "Random number generates a random number between  2 values - defaults to 0 & 100.  Also can specify range MGB_RANDOMNUMBER(101,110)."
+             "description": "Random number generates a random number between 2 values - defaults to 1 and 100.  Also can specify range MGB_RANDOMNUMBER(101,110)."
         }
     ],
 
+    "project-settings": [
+        {
+            "key": "defaultrange",
+            "name": "Range options for default: 1 to 100 or 0 to 100 <br>unchecked = 1 to 100, <br>checked = 0 to 100",
+            "type": "checkbox"
+        }
+    ],
+    
     "versions": [
         {
+            "1.1.0": "Feature: add unique number within a project. Code improvements and clean up.",
             "1.0.5": "Minor update: standardize branding, emails and doc updates.",
             "1.0.4": "Bug fix: fixes min and max values to be robust. Also fixes problem with leading paren making value be zero for MIN.",
             "1.0.3": "Updated PHP8 fixes and other minor update changes.",
